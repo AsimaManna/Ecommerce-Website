@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROJECT</title>
+  <link rel="stylesheet" type="text/css" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+<style>
+    *{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Roboto',sans-serif;
+}
+body{
+  background-color: #eeee;
+}
+.pic{
+  height: 10%;
+  width: 20%;
+  padding-top: 25px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eeee;
+  padding: 17px;
+  box-shadow: 0 2px 2px 2px rgb(162, 162, 162);
+}
+nav .logo{
+  margin-left: 22px;
+  font-size: 24px;
+}
+ul{
+  margin-right:45px;
+  margin-top: 7px;
+}
+nav ul li{
+  list-style: none;
+}
+ul li a{
+  margin-inline: 22px;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+ul li #home{
+  color: rgb(5, 167, 167);
+}
+ul li a:hover{
+  border-bottom: 2px solid black;
+}
+ul li i:hover{
+  color: gray;
+  cursor: pointer;
+}
+.main{
+  display:flex;
+  justify-content: space-around;
+}
+.main .mainText{
+  margin-top: 144px;
+  font-size:24px;
+}
+.mainText h1{
+  font-size: 64px;
+}
+.mainText .top{
+  color: rgb(4, 138, 138);
+}
+.mainText button{
+  width: 145px;
+  height: 40px;
+  background-color:rgb(4, 140, 140) ;
+  border: none;
+  font-size: 22px;
+  color: white;
+  margin-top: 24px; 
+  cursor: pointer;
+}
+.mainText p{
+  margin-top: 12px;
+}
+.mainText button:hover{
+  border: 2px solid rgb(3, 128, 128);
+  background-color: transparent;
+  color: rgb(2, 121, 121);
+}
+.head h1{
+  text-align: center;
+  padding: 33px;
+  margin-top: 32px;
+}
+.head span{
+  color: rgb(2, 164, 164);
+}
+.card{
+  display: flex;
+  justify-content: center;
+}
+.card .crd{
+  width: 298px;
+  height: 505px;
+  background-color: #fff;
+  margin-inline: 11px;
+  border-radius: 35px;
+  /padding: 22px;/
+}
+.crd img {
+  width: 95%;
+  padding: 30px;
+  border-radius: 35px;
+}
+.crdText{
+  margin-left: 16px;
+  padding: 8px;
+}
+.crdText button{
+  width: 110px;
+  height: 33px;
+  border: none;
+  background-color: rgb(5, 141, 141);
+  color: white;
+  font-size: 11px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+.crdText i{
+  color: rgb(255, 149, 0);  
+}
+.blog{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  margin-inline: 22px;
+  border-radius: 11px;
+}
+.blog:hover{
+  transition: 0.6s ease;
+  width: 520px;
+  height: 320px;
+}
+.blog img{
+  padding: 22px;
+  width: 55%;
+}
+.blogText{
+  padding:12px;
+  margin-top: 33px;
+}
+.blogText a{
+  width: 130px;
+  padding: 4px;
+  height: 18px;
+  background-color: rgb(4, 136, 136);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  top: 33px;
+  text-decoration: none;
+}
+.letter{
+  display: flex;
+  justify-content: space-between;
+  background-color: #09126b;
+  color: white;
+  padding: 43px;
+  margin-top: 2%;
+}
+.inp{
+  display: flex;
+}
+.inp input{
+  width:330px;
+  height: 33px;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.inp button{
+  width: 100px;
+  height: 33px;
+  background-color: rgb(2, 173, 173);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  padding: 53px;
+  background-color: #686b8c;
+  margin-top: 1%;
+}
+.footer .footerText{
+  margin-inline: 85px;
+}
+.footerText p{
+  margin-top: 11px;
+}
+.footerText{
+  color: #f0f0f2;
+}
+.about{
+  display: none;
+}
+.aboutus{
+  background-color: rgb(1, 1, 42);
+  color: white;
+  padding: 56px;
+  font-size: 22px;
+}
+.me{
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  background-color: #fff;
+  padding: 33px;
+  margin-left: 18%;
+  margin-top: 4%;
+}
+.me img{
+  height: 300px;
+  width: 300px;
+}
+.aboutText{
+  padding-left: 10%;
+  font-size: 115%;
+}
+.contact{
+  display: none;
+}
+
+.contactus{
+  background-color: rgb(1, 1, 42);
+  color: white;
+  padding: 56px;
+  font-size: 22px;
+}
+.trends{
+  display: none;
+}
+.Text{
+  font-size: 190%;
+}
+.contactme{
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  height: 350px;
+  margin-top: 5%;
+  background-color: #fff;
+  margin-left: 10%;
+}
+.contactme img{
+  width: 55%;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-block-end: 1%;
+}
+.contactText{
+  padding: 22px;
+  width: 600px;
+}
+.contactText p{
+  margin-top:12px ;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <h1>Trends</h1>
+      </div>
+      <ul>
+        <li>
+          <a id="home" onclick="homes()">Home</a>
+          <a id="shop" onclick="shops()">Shops</a>
+          <a id="blog" onclick="blogs()">Blog</a>
+          <a id="about" onclick="abouts()">About</a>
+          <a id="contact" onclick="contacts()">Contact</a>
+          <a><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!--mainpage-->
+    <div class="main" id="mainPage">
+      <div class="mainText">
+        <h2>Trends...</h2>
+        <h1 class="top">Super Value Deals</h1>
+        <p class="Text">On All Products</p>
+        <p>Lorem ipsum dolor,sit amet consectetur adipisicing elit.Nisi</p>
+        <button>Explore</button>
+      </div>
+      <img src="model.png" alt="" class="pic">
+    </div>
+    
+    <!--cards-->
+    <div class="trend" id="trendFirst">
+      <div class="head">
+        <h1>Trends <span>Men's Wear</span> </h1>
+      </div>
+      <div class="card">
+        <div class="crd">
+          <img src="men1.jpg" alt="">
+          <div class="crdText">
+          <h3>Cotton Trending Shirt's</h3>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i><br>
+          <button><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FRK-HUB-Digital-Casual-X-Large%2Fdp%2FB0BQN33SJ5&psig=AOvVaw09-PbJm0grJxriPs3r_0H7&ust=1752084618832000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNjss_ztrY4DFQAAAAAdAAAAABAE">Add to cart</a></button>
+        </div></div>
+        <div class="crd">
+          <img src="men2.jpg" alt="">
+          <div class="crdText">
+          <h3>Cotton Trending Shirt's</h3>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i><br>
+          <button><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flipkart.com%2Fethnic-trendz-men-solid-casual-maroon-shirt%2Fp%2Fitm6bdd3e10e4d15%3Fpid%3DSHTGGGFYK8RN9BUY&psig=AOvVaw0dcJ7gih_X6BMSrhomr9MR&ust=1752084280386000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPjI4tvsrY4DFQAAAAAdAAAAABAE">Add to cart</a></button>
+        </div>
+        </div>
+        <div class="crd">
+          <img src="men3.jpg" alt="">
+          <div class="crdText">
+          <h3>Cotton Trending Shirt's</h3>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i><br>
+          <button><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FHmkm-Men-Casual-Printrd-Shirts%2Fdp%2FB0BVZWWDT5&psig=AOvVaw0p7Q0JWgi1zsBZTehx6lQ4&ust=1752084084073000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCOiV-f3rrY4DFQAAAAAdAAAAABAE">Add to cart</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!--Women Card-->
+    <div class="trend" id="trendSec">
+      <div class="head">
+        <h1>Trends <span>Women's Wear</span> </h1>
+      </div>
+      <div class="card">
+        <div class="crd">
+          <img src="women1.jpg" alt="">
+          <div class="crdText">
+          <h4>Trending Girl Kurta</h4>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i><br>
+          <button><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flipkart.com%2Fisha-creation-women-kurti-pant-set%2Fp%2Fitm72f844827b821%3Fpid%3DETHH7PZDHHWHEJUU%26lid%3DLSTETHH7PZDHHWHEJUUO2QUAK%26marketplace%3DFLIPKART%26cmpid%3Dcontent_ethnic-set_8965229628_gmc&psig=AOvVaw0aBaaXUantqaFaDlay7t8_&ust=1752084389655000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPCWl5HtrY4DFQAAAAAdAAAAABAE">Add to cart</a></button>
+        </div></div>
+        
+        <div class="crd">
+          <img src="women2.jpg" alt="">
+          <div class="crdText">
+          <h4>Trending Girl Top's</h4>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i><br>
+          <button><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fslenor.com%2Fproducts%2Fslenor-floral-printed-sweetheart-neck-puff-sleeve-georgette-peplum-top&psig=AOvVaw0NnTtteKiWuT4HURTLNPxt&ust=1752044933199000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJjPtZParI4DFQAAAAAdAAAAABAE">Add to cart</a></button>
+        </div>
+      </div>
+        <div class="crd">
+          <img src="women3.jpg" alt="">
+          <div class="crdText">
+          <h4>Trending Girl Gown's</h4>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i><br>
+          <button><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flipkart.com%2Fmishti-fashion-hub-women-gown-dupatta-set%2Fp%2Fitmf074bba32e8b2%3Fpid%3DETHGVWXTRZXGSF3Y%26lid%3DLSTETHGVWXTRZXGSF3YHD5GQQ%26marketplace%3DFLIPKART%26cmpid%3Dcontent_ethnic-set_8965229628_gmc&psig=AOvVaw25FJ2UlR3zmHzdrt0UzdcV&ust=1752084432526000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMCw9bbtrY4DFQAAAAAdAAAAABAL">Add to cart</a></button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!--about us-->
+    <div class="about" id="aboutSection">
+      <div class="aboutus">
+        <h1>#KnowUs</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="me">
+        <img src="Ima.jpg" alt="">
+        <div class="aboutText">
+          <h1>Who we are?</h1>
+          <p>We are a trending fashion company dedicated to providing the latest styles and quality products for both men and women. Our mission is to make fashion accessible and affordable for everyone.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!--contact-->
+    <div class="contact" id="contactSection">
+      <div class="contactus">
+        <h1>#Let's Connect</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="contactme">
+        <div class="contactText">
+          <h1>Visit Our Office or Contact<br>Us Today</h1>
+          <p>Address: Dablin Park, England,  New York.</p>
+          <p>Email: info@trends.com</p>
+          <p>Phone: 8101755118</p>
+        </div>
+        <img src="Map.webp" alt="">
+      </div>      
+    </div>
+    
+    <!--blogs-->
+    <div class="trends" id="blogSection">
+      <div class="head">
+        <h1>Latest <span>Fashion Blogs</span> </h1>
+      </div>
+      <div class="card">
+        <div class="blog">
+          <img src="women4.jpg" alt="">
+          <div class="blogText">
+            <h2>Trending Girl Cloths</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
+            <a href="https://images.app.goo.gl/HmVdns1fwp8qcxfu5">Read More</a>
+          </div>
+        </div>
+        <div class="blog">
+          <img src="men4.jpg" alt="">
+          <div class="blogText">
+            <h2>Trending Boys Cloths</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, animi expedita?</p>
+            <a href="https://images.app.goo.gl/RvaTqCGrMnkztDDN6
+            ">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Letter-->
+    <div class="letter">
+      <div class="letterText">
+        <h1>Sign Up for NewsLetter</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="inp">
+        <input type="text" placeholder="Enter Email">
+        <button>Sign Up</button>
+      </div>
+    </div>
+    
+    <!--Footer-->
+    <div class="footer">
+      <div class="footerText">
+        <h2>Trends</h2>
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Satisfaction</p>
+      </div>
+      <div class="footerText">
+        <h2>About Us</h2>
+        <p>Address:Lorem ipsum dolor sit amet,<br>
+          consectetur adipiscing<br>
+        Perferendis, Excepturi alias.</p>
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Satisfaction</p>
+      </div>
+      <div class="footerText">
+        <h2>Contact</h2>
+        <p>8101755118</p>
+        <p>Customer</p>
+        <p>Coming up..</p>
+        <p>New Arrival</p>
+      </div>
+      <div class="footerText">
+        <h2>Trending</h2>
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Shops</p>
+      </div>
+    </div>
+  </div>
+
+<script>
+// Get all elements
+let mainPage = document.getElementById("mainPage");
+let trendFirst = document.getElementById("trendFirst");
+let trendSec = document.getElementById("trendSec");
+let aboutSection = document.getElementById("aboutSection");
+let contactSection = document.getElementById("contactSection");
+let blogSection = document.getElementById("blogSection");
+let letter = document.querySelector(".letter");
+let footer = document.querySelector(".footer");
+
+// Function to hide all sections
+function hideAllSections() {
+  mainPage.style.display = "none";
+  trendFirst.style.display = "none";
+  trendSec.style.display = "none";
+  aboutSection.style.display = "none";
+  contactSection.style.display = "none";
+  blogSection.style.display = "none";
+  letter.style.display = "none";
+  footer.style.display = "none";
+}
+
+// Function to reset all nav colors
+function resetNavColors() {
+  document.getElementById("home").style.color = "black";
+  document.getElementById("shop").style.color = "black";
+  document.getElementById("blog").style.color = "black";
+  document.getElementById("about").style.color = "black";
+  document.getElementById("contact").style.color = "black";
+}
+
+// Home function
+function homes() {
+  hideAllSections();
+  mainPage.style.display = "flex";
+  trendFirst.style.display = "block";
+  trendSec.style.display = "block";
+  letter.style.display = "flex";
+  footer.style.display = "flex";
+  
+  resetNavColors();
+  document.getElementById("home").style.color = "rgb(2,173,173)";
+}
+
+// Shop function
+function shops() {
+  hideAllSections();
+  trendFirst.style.display = "block";
+  trendSec.style.display = "block";
+  footer.style.display = "flex";
+  
+  resetNavColors();
+  document.getElementById("shop").style.color = "rgb(2,173,173)";
+}
+
+// Blog function
+function blogs() {
+  hideAllSections();
+  blogSection.style.display = "block";
+  footer.style.display = "flex";
+  
+  resetNavColors();
+  document.getElementById("blog").style.color = "rgb(2, 173, 173)";
+}
+
+// About function
+function abouts() {
+  hideAllSections();
+  aboutSection.style.display = "block";
+  footer.style.display = "flex";
+  
+  resetNavColors();
+  document.getElementById("about").style.color = "rgb(2, 173, 173)";
+}
+
+// Contact function
+function contacts() {
+  hideAllSections();
+  contactSection.style.display = "block";
+  footer.style.display = "flex";
+  
+  resetNavColors();
+  document.getElementById("contact").style.color = "rgb(2, 173, 173)";
+}
+
+// Initialize with home page
+homes();
+</script>
+</body>
+</html>
